@@ -26,7 +26,7 @@ These bindings apply automatically for all users and do not require configuratio
 
 1. In Foundry VTT, go to **Add-on Modules → Install Module**
 2. Paste the following manifest URL:
-   https://raw.githubusercontent.com/yourname/custom-dnd5e-skipdialog/main/module.json
+   https://raw.githubusercontent.com/vfez1/custom-dnd5e-skipdialog/main/module.json
 
 3. Click **Install**, then **Enable** the module in your world.
 
