@@ -52,9 +52,9 @@ All settings are loaded from a JSON config file, so you can tweak values without
 
 ## ⚙️ Configuration
 
-Settings are stored in `dnd5e-settings.json` (same folder as the module JS file). You can change keybindings, core Foundry settings, and D&D5e permissions without editing the JavaScript directly.  
+Settings are stored in `settings.json` (same folder as the module JS file). You can change keybindings, core Foundry settings, and D&D5e permissions without editing the JavaScript directly.  
 
-Example snippet of `dnd5e-settings.json`:
+Example snippet of `settings.json`:
 
 ```json
 {
