@@ -2,7 +2,7 @@ Hooks.once("ready", async () => {
     console.log("🔁 [Override Settings] Hook: ready");
 
     // --- Load config file ---
-    const response = await fetch("./settings.json");
+    const response = await fetch("/modules/foundry-override-settings/settings.json");
     const config = await response.json();
 
     // --- Override keybindings ---
