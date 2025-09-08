@@ -1,0 +1,34 @@
+{
+  "core": {
+    "leftClickRelease": true,
+    "chatBubblesPan": false,
+    "visionAnimation": true,
+    "lightAnimation": true,
+    "showToolclips": false,
+    "tokenDragPreview": false,
+    "tokenAutoRotate": false
+  },
+  "dnd5e": {
+    "gridAlignedSquareTemplates": true,
+    "autoCollapseItemCards": false,
+    "autoCollapseChatTrays": "older",
+    "allowPolymorphing": true,
+    "allowSummoning": true,
+    "defaultSkills": [
+      "acr","ani","arc","ath",
+      "dec","his","ins","itm",
+      "inv","med","nat","prc",
+      "prf","per","rel","slt",
+      "ste","sur"
+    ]
+  },
+  "uiConfig": {
+    "fadeOpacity": 0.9,
+    "chatNotifications": "pip"
+  },
+  "keybindings": {
+    "dnd5e.skipDialogNormal": ["AltLeft","AltRight"],
+    "dnd5e.skipDialogAdvantage": ["ShiftLeft","ShiftRight"],
+    "dnd5e.skipDialogDisadvantage": ["ControlLeft","ControlRight"]
+  }
+}
