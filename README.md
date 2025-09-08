@@ -35,7 +35,7 @@ All settings are loaded from a JSON config file, so you can tweak values without
 
 1. In Foundry VTT, go to **Add-on Modules → Install Module**.  
 2. Paste the manifest URL:  
-   `https://raw.githubusercontent.com/vfez1/custom-dnd5e-skipdialog/main/module.json`  
+   `https://raw.githubusercontent.com/vfez1/foundry-override-settings/main/module.json`  
 3. Click **Install**, then **Enable** the module in your world.  
 
 > 🧠 Requires the [`lib-wrapper`](https://github.com/ruipin/fvtt-lib-wrapper) module to be installed and enabled.  
