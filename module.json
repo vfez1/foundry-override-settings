@@ -31,6 +31,5 @@
   },
   "url": "https://github.com/vfez1/foundry-override-settings",
   "manifest": "https://raw.githubusercontent.com/vfez1/foundry-override-settings/main/module.json",
-  "download": "https://github.com/vfez1/foundry-override-settings/archive/refs/heads/main.zip",
-  "assets": ["settings.json"]
+  "download": "https://github.com/vfez1/foundry-override-settings/archive/refs/heads/main.zip"
 }
