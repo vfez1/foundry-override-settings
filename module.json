@@ -1,7 +1,7 @@
 {
-  "id": "custom-dnd5e-skipdialog",
-  "title": "Custom DnD5e Skip Dialog Keys",
-  "description": "Overrides skip dialog keybindings in the DnD5e system.",
+  "id": "foundry-override-settings",
+  "title": "Custom DnD5e Keybindings & Settings",
+  "description": "Overrides skip dialog keybindings and configurable D&D5e world settings like summoning, polymorphing, and templates.",
   "version": "1.0.0",
   "authors": [
     {
@@ -11,7 +11,7 @@
   ],
   "compatibility": {
     "minimum": "11",
-    "verified": "12"
+    "verified": "13"
   },
   "scripts": ["override.js"],
   "relationships": {
@@ -30,6 +30,7 @@
     ]
   },
   "url": "https://github.com/vfez1/custom-dnd5e-skipdialog",
-  "manifest": "https://raw.githubusercontent.com/vfez1/custom-dnd5e-skipdialog/main/module.json",
-  "download": "https://github.com/vfez1/custom-dnd5e-skipdialog/archive/refs/heads/main.zip"
+  "manifest": "https://raw.githubusercontent.com/vfez1/foundry-override-settings/main/module.json",
+  "download": "https://github.com/vfez1/foundry-override-settings/archive/refs/heads/main.zip",
+  "assets": ["settings.json"]
 }
