@@ -1,43 +1,78 @@
-# 🛠️ Custom DnD5e Skip Dialog Keys
+# 🛠️ Foundry - Override Settings
 
-This Foundry VTT module overrides the default Dungeons & Dragons 5e keybindings for skipping roll dialogs using custom modifier keys (Alt, Shift, Ctrl).
+This Foundry VTT module overrides various core and D&D5e settings, including keybindings and permissions like summoning and polymorphing.  
+
+---
 
 ## 🎯 What It Does
 
-By default, the DnD5e system uses the following keys:
+By default, D&D5e keybindings are:
 
--   **Alt** — Skip Dialog
--   **Alt + Click** — Advantage/Critical
--   **Alt + Right Click** — Disadvantage/No Crit
+- Alt — Skip Dialog  
+- Alt + Click — Advantage/Critical  
+- Alt + Right Click — Disadvantage/No Crit  
 
-This module remaps those to:
+This module remaps them to the following keys and applies other configurable D&D5e world settings:
 
-| Action                     | New Keys                      |
-| -------------------------- | ----------------------------- |
-| Skip Dialog (Normal)       | `AltLeft`, `AltRight`         |
-| Skip Dialog (Advantage)    | `ShiftLeft`, `ShiftRight`     |
-| Skip Dialog (Disadvantage) | `ControlLeft`, `ControlRight` |
+- **Keybindings:**  
+  - Skip Dialog (Normal): `AltLeft`, `AltRight`  
+  - Skip Dialog (Advantage): `ShiftLeft`, `ShiftRight`  
+  - Skip Dialog (Disadvantage): `ControlLeft`, `ControlRight`  
 
-These bindings apply automatically for all users and do not require configuration.
+- **D&D5e World Settings:**  
+  - `allowPolymorphing`  
+  - `allowSummoning`  
+  - `gridAlignedSquareTemplates`  
+  - `autoCollapseItemCards`  
+  - `autoCollapseChatTrays`  
+  - `defaultSkills`  
+
+All settings are loaded from a JSON config file, so you can tweak values without editing the JavaScript.
 
 ---
 
 ## ✅ Installation
 
-1. In Foundry VTT, go to **Add-on Modules → Install Module**
-2. Paste the following manifest URL:
-   https://raw.githubusercontent.com/vfez1/custom-dnd5e-skipdialog/main/module.json
+1. In Foundry VTT, go to **Add-on Modules → Install Module**.  
+2. Paste the manifest URL:  
+   `https://raw.githubusercontent.com/vfez1/custom-dnd5e-skipdialog/main/module.json`  
+3. Click **Install**, then **Enable** the module in your world.  
 
-3. Click **Install**, then **Enable** the module in your world.
-
-> 🧠 Requires the [`lib-wrapper`](https://github.com/ruipin/fvtt-lib-wrapper) module to be installed and enabled.
+> 🧠 Requires the [`lib-wrapper`](https://github.com/ruipin/fvtt-lib-wrapper) module to be installed and enabled.  
 
 ---
 
 ## 🔧 Compatibility
 
--   **Foundry VTT**: v12+
--   **DnD5e System**: v4.3.x+
--   Tested with `dnd5e.skipDialogNormal`, `dnd5e.skipDialogAdvantage`, and `dnd5e.skipDialogDisadvantage`.
+- **Foundry VTT:** v13  
+- **DnD5e System:** v4.3.x+  
+- Tested with all keybinding overrides and JSON-configurable D&D5e settings.
 
 ---
+
+## ⚙️ Configuration
+
+Settings are stored in `dnd5e-settings.json` (same folder as the module JS file). You can change keybindings, core Foundry settings, and D&D5e permissions without editing the JavaScript directly.  
+
+Example snippet of `dnd5e-settings.json`:
+
+```json
+{
+  "core": {
+    "leftClickRelease": true,
+    "chatBubblesPan": false
+  },
+  "dnd5e": {
+    "allowSummoning": true,
+    "allowPolymorphing": true,
+    "gridAlignedSquareTemplates": true,
+    "autoCollapseItemCards": false,
+    "autoCollapseChatTrays": "older",
+    "defaultSkills": ["acr","ani","arc","ath","dec","his","ins","itm"]
+  },
+  "keybindings": {
+    "dnd5e.skipDialogNormal": ["AltLeft","AltRight"],
+    "dnd5e.skipDialogAdvantage": ["ShiftLeft","ShiftRight"],
+    "dnd5e.skipDialogDisadvantage": ["ControlLeft","ControlRight"]
+  }
+}
