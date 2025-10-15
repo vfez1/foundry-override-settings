@@ -32,6 +32,7 @@
   },
   "keybindings": {
     "dnd5e.dragCopy": [],
+    "dnd5e.dragMove": [],
     "dnd5e.skipDialogNormal": [
       { "key": "AltLeft", "modifiers": ["Control"] }
     ],
