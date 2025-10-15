@@ -1,11 +1,13 @@
 Hooks.once("ready", async () => {
     console.log("🔁 [Override Settings] Hook: ready");
+
     try {
         const response = await fetch(
             "/modules/foundry-override-settings/settings.json"
         );
         if (!response.ok)
             throw new Error(`HTTP error! status: ${response.status}`);
+
         const config = await response.json();
         console.log("✅ Loaded config:", config);
 
@@ -35,6 +37,17 @@ Hooks.once("ready", async () => {
         for (const [key, keys] of Object.entries(config.keybindings)) {
             overrideEditable(key, keys);
         }
+
+        // --- Save keybindings persistently ---
+        const bindingsToSave = Object.fromEntries(
+            game.keybindings.bindings.entries()
+        );
+        localStorage.setItem(
+            "core.keybindings",
+            JSON.stringify(bindingsToSave)
+        );
+        console.log("💾 Keybindings saved to localStorage.");
+
         console.log("✅ Keybindings override complete.");
 
         // --- Apply all settings from any module namespace ---
