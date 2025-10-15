@@ -22,13 +22,26 @@
       "ste","sur"
     ]
   },
+  "combat-tracker-dock": {
+    "overflowStyle": "scroll",
+    "portraitSize": "70px"
+  },
   "uiConfig": {
     "fadeOpacity": 0.9,
     "chatNotifications": "pip"
   },
   "keybindings": {
-    "dnd5e.skipDialogNormal": ["AltLeft","AltRight"],
-    "dnd5e.skipDialogAdvantage": ["ShiftLeft","ShiftRight"],
-    "dnd5e.skipDialogDisadvantage": ["ControlLeft","ControlRight"]
+    "dnd5e.dragCopy": [],
+    "dnd5e.skipDialogNormal": [
+      { "key": "AltLeft", "modifiers": ["Control"] }
+    ],
+    "dnd5e.skipDialogAdvantage": [
+      { "key": "ShiftLeft", "modifiers": [] },
+      { "key": "ShiftRight", "modifiers": [] }
+    ],
+    "dnd5e.skipDialogDisadvantage": [
+      { "key": "ControlLeft", "modifiers": [] },
+      { "key": "ControlRight", "modifiers": [] }
+    ]
   }
 }
