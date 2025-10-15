@@ -38,15 +38,21 @@ Hooks.once("ready", async () => {
             overrideEditable(key, keys);
         }
 
-        // --- Save keybindings persistently ---
-        const bindingsToSave = Object.fromEntries(
-            game.keybindings.bindings.entries()
+        // --- Save only the keybindings that are in config ---
+        const stored = JSON.parse(
+            localStorage.getItem("core.keybindings") ?? "{}"
         );
-        localStorage.setItem(
-            "core.keybindings",
-            JSON.stringify(bindingsToSave)
-        );
-        console.log("💾 Keybindings saved to localStorage.");
+        for (const key of Object.keys(config.keybindings)) {
+            const binding = game.keybindings.bindings.get(key);
+            if (binding) {
+                stored[key] = binding;
+                console.log(`💾 Saved keybinding '${key}'`);
+            } else {
+                console.warn(`⚠️ Could not find binding to save for '${key}'`);
+            }
+        }
+        localStorage.setItem("core.keybindings", JSON.stringify(stored));
+        console.log("✅ Selected keybindings saved to localStorage.");
 
         console.log("✅ Keybindings override complete.");
 

@@ -2,7 +2,7 @@
   "id": "foundry-override-settings",
   "title": "Override Foundry Settings",
   "description": "Overrides skip dialog keybindings and configurable D&D5e world settings like summoning, polymorphing, and templates.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "authors": [
     {
       "name": "Vasilis Fezoulidis",
