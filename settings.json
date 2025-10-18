@@ -24,6 +24,7 @@
   },
   "combat-tracker-dock": {
     "overflowStyle": "scroll",
+	"carouselStyle": "leftCarousel",
     "portraitSize": "70px"
   },
   "uiConfig": {
