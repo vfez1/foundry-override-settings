@@ -1,0 +1,35 @@
+{
+  "id": "foundry-override-settings",
+  "title": "Override Foundry Settings",
+  "description": "Overrides skip dialog keybindings and configurable D&D5e world settings like summoning, polymorphing, and templates.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "vfez",
+      "discord": "fez#1260"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "scripts": ["override.js"],
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+      }
+    ],
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "url": "https://github.com/vfez1/foundry-override-settings",
+  "manifest": "https://raw.githubusercontent.com/vfez1/foundry-override-settings/main/module.json",
+  "download": "https://github.com/vfez1/foundry-override-settings/archive/refs/heads/main.zip"
+}
