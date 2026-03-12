@@ -126,7 +126,6 @@ Hooks.once("ready", async () => {
                 }
             }
         }
-
         log("✅ All settings successfully overridden!");
     } catch (err) {
         error("Error while loading settings:", err);
