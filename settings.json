@@ -15,21 +15,34 @@
     "allowPolymorphing": true,
     "allowSummoning": true,
     "defaultSkills": [
-      "acr","ani","arc","ath",
-      "dec","his","ins","itm",
-      "inv","med","nat","prc",
-      "prf","per","rel","slt",
-      "ste","sur"
+      "acr",
+      "ani",
+      "arc",
+      "ath",
+      "dec",
+      "his",
+      "ins",
+      "itm",
+      "inv",
+      "med",
+      "nat",
+      "prc",
+      "prf",
+      "per",
+      "rel",
+      "slt",
+      "ste",
+      "sur"
     ]
   },
   "combat-tracker-dock": {
     "overflowStyle": "scroll",
-	"carouselStyle": "1",
+    "carouselStyle": "1",
     "portraitSize": "70px"
   },
-  "ready-set-roll-5e-custom": {
+  "roll-model": {
     "confirmRetroAdv": true,
-	"confirmRetroCrit": true
+    "confirmRetroCrit": true
   },
   "uiConfig": {
     "fadeOpacity": 0.9,
@@ -39,15 +52,32 @@
     "dnd5e.dragCopy": [],
     "dnd5e.dragMove": [],
     "dnd5e.skipDialogNormal": [
-      { "key": "AltLeft", "modifiers": ["Control"] }
+      {
+        "key": "AltLeft",
+        "modifiers": [
+          "Control"
+        ]
+      }
     ],
     "dnd5e.skipDialogAdvantage": [
-      { "key": "ShiftLeft", "modifiers": [] },
-      { "key": "ShiftRight", "modifiers": [] }
+      {
+        "key": "ShiftLeft",
+        "modifiers": []
+      },
+      {
+        "key": "ShiftRight",
+        "modifiers": []
+      }
     ],
     "dnd5e.skipDialogDisadvantage": [
-      { "key": "ControlLeft", "modifiers": [] },
-      { "key": "ControlRight", "modifiers": [] }
+      {
+        "key": "ControlLeft",
+        "modifiers": []
+      },
+      {
+        "key": "ControlRight",
+        "modifiers": []
+      }
     ]
   }
 }
