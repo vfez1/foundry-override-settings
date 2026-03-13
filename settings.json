@@ -27,6 +27,10 @@
 	"carouselStyle": "1",
     "portraitSize": "70px"
   },
+  "roll-model": {
+    "confirmRetroAdv": true,
+	"confirmRetroCrit": true
+  },
   "uiConfig": {
     "fadeOpacity": 0.9,
     "chatNotifications": "pip"
